@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h2>LED Light</h2>
+    <img src="image/pic_bulboff.gif" id="light">
+    <br>
+    <br>
+    <button type="button" onclick="turnOffTheLight()">Turn off the light</button>
+    <button type="button" onclick="turnOnTheLight()">Turn on the light</button>
+    
+    <script>
+        var light = document.getElementById('light');
+        function turnOffTheLight(){
+            light.src = 'image/pic_bulboff.gif';
+            light.alt="Turn off the light"; 
+        }
+        function turnOnTheLight(){
+            light.src = 'image/pic_bulbon.gif';
+            light.alt="Turn on the light"; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- Breaking Long Code Lines or JavaScript Line Length and Line Breaks  => For best readability, programmers often like to avoid code lines longer than 80 characters. If a JavaScript statement does not fit on one line, the best place to break it is after an operator. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h2>JavaScript Statements</h2>
+    <p>The best place to break a code line is after an operator or a comma.</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        document.getElementById("demo1").innerHTML =
+        "Hello Dolly!";
+       
+        // You can also break up a code line within a text string with a single backslash. However Remember that, The (\) method is not the preferred method. It might not have universal support. Some browsers do not allow spaces behind the \ character.
+        document.getElementById("demo2").innerHTML = "Hello \
+        Dolly!";
+        
+        // You cannot break up a code line with a backslash: 
+        /*
+        document.getElementById("demo4").innerHTML = \
+        "Hello Dolly!";
+        */
+
+        // A safer way to break up a string, is to use string addition:
+        document.getElementById("demo3").innerHTML = "Hello " +
+        "Dolly!";
+    </script>
+</body>
+</html>

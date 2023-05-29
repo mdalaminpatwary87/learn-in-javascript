@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listeners with multiple elements</title>
+</head>
+<body>
+    <h1>You have not clicked any button</h1>
+    <button id="btn">button 1</button>
+    <button id="btn">button 2</button>
+    <button id="btn">button 3</button>
+    <script>
+        var heading = document.querySelector("h1");
+        var myButton = document.querySelectorAll("#btn");
+
+        for(var i=0; i < myButton.length; i++){
+            myButton[i].addEventListener("click", function(){
+                let text = this.innerHTML; 
+                heading.innerHTML = text + " is cliked";
+            })
+        }
+    </script>
+</body>
+</html>

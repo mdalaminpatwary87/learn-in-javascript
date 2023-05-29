@@ -1,0 +1,90 @@
+<!-- 
+    - image slider using onClick event
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            position: relative;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .btn{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        button{
+            padding: 10px;
+            background-color: yellowgreen;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rebeccapurple;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../images/html.png"><br/>
+
+        <div class="btn">
+            <button onclick="prev()">Previous</button>
+            <button onclick="next()">Next</button>
+        </div>
+    </div>
+
+    <script>
+        var imageGallary = ["../images/html.png","../images/css.png","../images/javascript.png"];
+        var imgTag = document.querySelector("img");
+
+        var count = 0;
+        function next(){
+            count++;
+            if(count >= imageGallary.length){
+                count = 0;
+                imgTag.src = imageGallary[count];
+            }else{
+                imgTag.src = imageGallary[count];
+            }
+        };
+
+        function prev(){
+            count--;
+            if(count < 0){
+                count = imageGallary.length -1;
+                imgTag.src = imageGallary[count];
+            }else{
+                imgTag.src = imageGallary[count];
+            }
+        };
+    </script>
+</body>
+</html>

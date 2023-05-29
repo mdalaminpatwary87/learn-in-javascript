@@ -1,0 +1,22 @@
+<!-- 
+    - SyntaxError is thrown if you try to evaluate code with a syntax error.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+
+    <script>
+        try{
+            let x = 5;
+            if(x === 5){
+                // console.log("x is equal to 5";  // SyntaxError: missing ) after argument.
+            }
+        }catch(err){
+            console.log(err)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 20rem;
+            height: 20rem;
+            margin: 5px 5px 0px 5px;
+            background-color: yellowgreen;
+        }
+        .myClass{
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+    </div>
+
+    <script>
+        let mydiv = document.querySelector('div');
+
+        mydiv.addEventListener('mouseover',function(){
+            let heading = mydiv.children[0];
+            heading.classList.add('myClass');
+            
+            console.log('mouseover is occured');
+        });
+
+        mydiv.addEventListener('mouseout',function(){
+            let heading = mydiv.children[0];
+            heading.classList.remove('myClass');
+
+            console.log('mouseout is occured');
+        });
+    </script>
+</body>
+</html>

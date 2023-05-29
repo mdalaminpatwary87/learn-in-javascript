@@ -1,0 +1,26 @@
+<!-- 
+    - Error object: 
+                 - for all built-in errors, the error object has two main properties such as name, message
+                 - error for show an error as a whole name and message
+                 - error.name for an undefined variable that’s "ReferenceError"
+                 - error.message for textual message about error details
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        try{
+            alert("Start of try runs");
+            errorSomething; // error, variable is not defined!
+            alert('End of try (never reached)');
+        }catch(error){
+            alert(error); // ReferenceError: errorSomething is not defined
+            alert(error.name); // ReferenceError
+            alert(error.message); // errorSomething is not defined
+        }
+    </script>
+</body>
+</html>

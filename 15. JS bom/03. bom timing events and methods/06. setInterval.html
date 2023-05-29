@@ -1,0 +1,21 @@
+<!-- 
+    - real life example using setInterval()
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <p id="time"></p>
+    <script>
+        let currentTime = document.querySelector('#time');
+
+        setInterval(function(){
+            let date = new Date();
+            let toLocaleTimeString = date.toLocaleTimeString();
+            currentTime.textContent = toLocaleTimeString;
+        },1000)
+    </script>
+</body>
+</html>

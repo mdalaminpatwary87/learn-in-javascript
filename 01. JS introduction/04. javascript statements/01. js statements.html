@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h2>JavaScript Statements</h2>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p id="demo"></p>
+    
+    <script>
+        /*
+        JavaScript Programs   => A computer program is a list of "instructions" to be "executed" by a computer. In a programming language, these programming instructions are called statements. A JavaScript program is a list of programming statements. In HTML, JavaScript programs are executed by the web browser.
+        JavaScript Statements => JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments. Most JavaScript programs contain many JavaScript statements. The statements are executed, one by one, in the same order as they are written.JavaScript programs (and JavaScript statements) are often called JavaScript code.
+        */
+        console.log('Hello World');     // It's Called Statements
+        var x = 5;                      // Statement 1
+        var y = 10;                     // Statement 2
+        var z = x + y;                  // Statement 3
+        console.log(z);                 // Statement 4. Aslo called simple statement [Statement 1 - 4]
+        document.getElementById('demo').innerHTML = 'The value of z is ' + z +'.' // Statement 5
+        var number = 10 + (30 / 5) * 5  //statements 6
+        console.log(number);            //statements 7
+
+
+        // Semicolons (;) => JavaScript statements are separated by semicolons. So Semicolons separate JavaScript statements. Add a semicolon at the end of each executable statement
+        var a = 5;       // Assign the value 5 to a
+        var b = 10;      // Assign the value 10 to b
+        var c = a + b;   // Assign the sum of a and b to c
+        console.log(c);  // All Statements are separated by semicolons.
+
+        // When separated by semicolons, multiple statements on one line are allowed. Remember that's On the web, you might see examples without semicolons. Ending statements with semicolon is not required, but highly recommended.
+        var a = 5; var b = 10; var c = a + b;
+        console.log(c) 
+    </script>
+</body>
+</html>

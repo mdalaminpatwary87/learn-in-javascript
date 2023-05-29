@@ -1,0 +1,22 @@
+<!-- 
+JavaScript output display possibilities => JavaScript can "display" data in different ways:
+                                        -  Writing into an HTML element, using innerHTML.
+                                        -  Writing into the HTML output using document.write().
+                                        -  Writing into an alert box, using window.alert().
+                                        -  Writing into the browser console, using console.log().
+using innerHTML => To access an HTML element, JavaScript can use the document.getElementById(id) method. The id attribute defines the HTML element. The innerHTML property defines the HTML content
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById('demo1').innerHTML = 'Hello JavaScript';
+        document.getElementById('demo2').innerHTML = 10 + 50;
+    </script>
+</body>
+</html>

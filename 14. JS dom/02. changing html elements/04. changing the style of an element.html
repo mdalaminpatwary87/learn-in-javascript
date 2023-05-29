@@ -1,0 +1,33 @@
+<!-- 
+    - style property to change the style of an element.
+    - syntax: element.style.property = 'new style';
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            color: green;
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myHeading">Hello world</h1>
+
+    <script>
+        let  myHeading = document.querySelector('#myHeading');
+        myHeading.style.color = 'red';
+        myHeading.style.backgroundColor = 'yellow';
+        myHeading.style.padding = "15px";
+        myHeading.style.textAlign = 'center'; 
+    </script>
+</body>
+</html>

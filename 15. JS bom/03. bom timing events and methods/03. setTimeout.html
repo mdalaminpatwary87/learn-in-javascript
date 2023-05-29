@@ -1,0 +1,38 @@
+<!-- 
+    - real life example using setTimeout()
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="userInfo">
+        <h1>Log in</h1>
+        <form>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password">
+            <br>
+            <br>
+            <button type="button">Login</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        let logInBtn = document.querySelector('button');
+        let message =  document.querySelector('#message');
+
+        logInBtn.addEventListener('click', function(){
+            message.textContent = "Login Successfully!";
+            setTimeout(function(){
+                message.textContent = '';
+            },2000)
+        });
+    </script> 
+</body>
+</html>

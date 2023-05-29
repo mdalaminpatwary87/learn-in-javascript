@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slideshow-container{
+    background-color: rgb(30, 114, 210);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow-element{
+    text-align: center;
+    display: none;
+}
+.slideshow-element i{
+    color: rgb(255, 255, 255);
+    font-size: 10rem;
+    margin-bottom: 10rem; 
+}
+.slideshow-element h2{
+    color: rgb(255, 255, 255);
+    font-size: 10rem; 
+    font-family: jost;
+}
+.slideshow-element.current{
+    text-align: center;
+    display: block;
+}

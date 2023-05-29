@@ -1,0 +1,36 @@
+<!-- audio & video events => canplay, play, playing, pause, progress, ended, volumechange, waiting-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <video controls muted>
+        <source src="../../video/mov_bbb.mp4" type="video/mp4">
+    </video>
+    <script>
+    var video = document.querySelector('video'); 
+
+    video.addEventListener('canplay', function handle(e){
+        console.log("canplay")
+    })
+
+    video.addEventListener('play', function handle(e){
+        console.log("play")
+    })
+
+    video.addEventListener('playing', function handle(e){
+        console.log("playing")
+    })
+    video.addEventListener('ended', function handle(e){
+        console.log("ended")
+    })
+    video.addEventListener('volumechange', function handle(e){
+        console.log("volumechange")
+    })
+    video.addEventListener('pause', function handle(e){
+        console.log("pause")
+    })
+    </script>
+</body>
+</html>

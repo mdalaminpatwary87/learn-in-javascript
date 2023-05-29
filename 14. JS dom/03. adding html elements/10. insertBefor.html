@@ -1,0 +1,22 @@
+<!-- create an html elemnts with insertBefore(before,after) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Hello World</h1>
+    </main>
+
+    <script>
+        var aLink = document.createElement('a');
+        aLink.href = "https://www.youtube.com/";
+        aLink.innerHTML = "Click";
+
+        var main = document.querySelector('#main');
+        var heading = document.querySelector('h1');
+        main.insertBefore(aLink,heading);    
+    </script>
+</body>
+</html>

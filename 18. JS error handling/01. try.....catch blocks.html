@@ -1,0 +1,36 @@
+<!-- 
+    - try.....catch: 
+                    - try...catch statement is used for error handling in javascript.
+                    - try...catch syntax:
+                                            try{
+                                                // Block of code to try
+
+                                            }catch (err) {
+                                                // Block of code to handle errors
+                                            }
+
+                    - first, the code in try {...} is executed.
+                    - there were no errors, then catch (err) is ignored: the execution reaches the end of try and goes on, skipping catch.
+                    - If an error occurs, then the try execution is stopped, and control flows to the beginning of catch (err). The err variable (we can use any name for it) will contain an error object with details about what happened.
+                    - So, an error inside the try {...} block does not kill the script – we have a chance to handle it in catch.
+-->
+<!-- 
+    - here an errorless example: shows alert (1) and (2)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        try{
+            alert("Start of try runs");
+             // ...no errors here
+            alert('End of try runs');
+        }catch(error){
+            alert('Catch is ignored, because there are no errors'); 
+        };
+    </script>
+</body>
+</html>

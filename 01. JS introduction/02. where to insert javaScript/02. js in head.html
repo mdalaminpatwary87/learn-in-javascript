@@ -1,0 +1,18 @@
+<!--<head> => JavaScript function is placed in the <head> section of an HTML page. The function is invoked when a button is clicked-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JAVASCRIPT</title>
+    <script>
+      function changeContent() {
+        var element = document.getElementById("demo");
+        element.innerHTML = "Paragraph changed";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>JavaScript in Head</h2>
+    <p id="demo">A Paragraph.</p>
+    <button type="button" onclick="changeContent()">Try it!</button>
+  </body>
+</html>

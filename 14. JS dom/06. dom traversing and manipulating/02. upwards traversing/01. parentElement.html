@@ -1,0 +1,35 @@
+<!-- 
+    - 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .student_list{
+            padding: 10px;
+            font-family: jost;
+            list-style-position: inside;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Student A</li>
+        <li>Student B</li>
+        <li>Student C</li>
+    </ol>
+
+    <script>
+        let studentA = document.querySelectorAll("li");
+        let studentList = studentA[0].parentElement;
+        studentList.setAttribute('class','student_list');
+    </script>
+</body>
+</html>

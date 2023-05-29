@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Objects Display</title>
+</head>
+<body>
+    <p id="demo0"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script> 
+        var person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        document.getElementById('demo0').innerHTML = person; // Displaying a JavaScript object will output [object Object].
+
+        /*====================================================================================================================================================
+        JavaScript Objects Display => Some common solutions to display JavaScript objects are: 
+                            01. Displaying the Object Properties by name
+                            02. Displaying the Object Properties in a Loop
+                            03. Displaying the Object using Object.values()
+                            04. Displaying the Object using JSON.stringify()
+        ======================================================================================================================================================*/
+        var person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        /*====================================================================================================================================================
+        Displaying Object Properties name => The properties of an object can be displayed as a string.
+        ======================================================================================================================================================*/
+        document.getElementById('demo1').innerHTML = person.name;
+        document.getElementById('demo2').innerHTML = person.name + ' ' + person.age + ' ' + person.city;
+
+        /*====================================================================================================================================================
+        Displaying the Object in a Loop => The properties of an object can be collected in a loop. You must use person[x] in the loop. person.x will not work (Because x is a variable).
+        ======================================================================================================================================================*/
+       text = ' ';
+       for(var i in person){
+        text += person[i] + ' ';
+       }
+        document.getElementById('demo3').innerHTML = text;
+
+        /*====================================================================================================================================================
+       Using Object.values() => Any JavaScript object can be converted to an array using Object.values():
+        ======================================================================================================================================================*/
+        var myArray = Object.values(person) // convert array
+        document.getElementById('demo4').innerHTML = myArray; // myString is now a JavaScript string, ready to be displayed.
+
+        /*====================================================================================================================================================
+        Using JSON.stringify() => Any JavaScript object can be stringified (converted to a string) with the JavaScript function JSON.stringify():
+        ======================================================================================================================================================*/
+        var myString = JSON.stringify(person);
+        document.getElementById('demo5').innerHTML = myString; // myString is now a JavaScript string, ready to be displayed. The result will be a string following the JSON notation: {"name":"John","age":50,"city":"New York"}
+        
+        /*====================================================================================================================================================
+        Stringify Dates => JSON.stringify converts dates into strings
+        ======================================================================================================================================================*/
+        var person1 = {
+            name: "John",
+            today: new Date()
+        };
+        var myString = JSON.stringify(person1);
+        document.getElementById('demo6').innerHTML = myString;
+
+        /*====================================================================================================================================================
+        Stringify Functions => JSON.stringify will not stringify functions.
+        ======================================================================================================================================================*/
+        var person2 = {
+            name: "John",
+            age: function () {return 30;}
+        };
+        var myString = JSON.stringify(person2);
+        document.getElementById('demo7').innerHTML = myString;
+
+        // This can be "fixed" if you convert the functions into strings before stringifying.
+        person2.age = person2.age.toString();
+        var myString = JSON.stringify(person2);
+        document.getElementById("demo8").innerHTML = myString;
+
+        /*====================================================================================================================================================
+        Stringify Arrays => It is also possible to stringify JavaScript arrays:
+        ======================================================================================================================================================*/
+        var arr = ["John", "Peter", "Sally", "Jane"];
+        var myString = JSON.stringify(arr);
+        document.getElementById("demo9").innerHTML = myString; // The result will be a string following the JSON notation. ["John","Peter","Sally","Jane"]
+    </script>
+</body>
+</html> 

@@ -1,0 +1,20 @@
+<!--
+    - document.querySelector('cssSelector') 
+                                        - method takes a single argument, which is represent the CSS selector to be used to select the element.
+                                        - method to find the first element that matches a specific CSS selector.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 class="myClass">Hello World 1</h1>
+    <h1 class="myClass">Hello World 2</h1>
+    
+    <script>
+        let myClass = document.querySelector('.myClass');
+        myClass.style.color = 'green';
+    </script>
+</body>
+</html>

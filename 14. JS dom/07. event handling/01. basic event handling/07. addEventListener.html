@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-DOM</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button type="button">Click</button>
+
+    <script>
+        let mybtn = document.querySelector('button');
+        mybtn.addEventListener('click',myFunction);
+
+        function myFunction(){
+            alert("Congratulation!");
+        }
+    </script>
+</body>
+</html>

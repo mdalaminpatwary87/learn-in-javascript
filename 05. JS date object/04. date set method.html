@@ -1,0 +1,42 @@
+<!--====================================================================================================================================================
+JavaScript set date methods => Set Date methods are used for setting a part of a date. Set Date methods let you set date values (years, months, days, hours, minutes, seconds, milliseconds) for a Date Object.
+
+    Method	                =>          Description
+    setHours()	                        Set the hour (0-23)
+    setMinutes()	                    Set the minutes (0-59)
+    setSeconds()	                    Set the seconds (0-59)
+    setMilliseconds()	                Set the milliseconds (0-999)
+    setDate()	                        Set the day as a number (1-31)
+    setMonth()	                        Set the month (0-11)
+    setFullYear()	                    Set the year (optionally month and day)
+    setTime()	                        Set the time (milliseconds since January 1, 1970)
+=====================================================================================================================================================-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <script>
+        // setHours()        => setHours() method sets the hours of a date object (0-23)
+        // setMinutes()      => setMinutes() method sets the minutes of a date object (0-59)
+        // getMilliseconds() => getMilliseconds() method returns the milliseconds of a date as a number (0-999)
+        // setDate()         => sets the day of a date object (1-31)
+        // setMonth()        => setMonth() method sets the month of a date object (0-11)
+        // setFullYear()     => setFullYear() method sets the year of a date object. In this example to 2020
+         var date = new Date();
+         date.setHours(10);
+         date.setMinutes(30);
+         date.setSeconds(40);
+         date.setDate(26);
+         // The setDate() method can also be used to add days to a date => If adding days shifts the month or year, the changes are handled automatically by the Date object.
+         date.setDate(date.getDate() + 4);
+         date.setMonth(2);
+         date.setFullYear(2024);
+        // setF ullYear() method can optionally set month and day.
+        // date.setFullYear(2020, 11, 3);
+         document.getElementById('demo1').innerHTML = date;
+      </script>
+</body>
+</html>

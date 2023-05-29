@@ -1,0 +1,24 @@
+<!--JavaScript Code Blocks => JavaScript statements can be grouped together in code blocks, inside curly brackets {...}. The purpose of code blocks is to define statements to be executed together.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>JAVASCRIPT</title>
+</head>
+<body>
+   <h1>JavaScript Statements</h1>
+   <p>JavaScript code blocks are written between { and }</p>
+   <p id="demo1"></p>
+   <p id="demo2"></p>
+   <button type="button" onclick="addContent()">Click Me!</button>
+
+   <script>
+      var element1 = document.getElementById("demo1");
+      var element2 = document.getElementById("demo2");
+      function addContent(){
+         element1.innerHTML = "Hello Dolly!";
+         element2.innerHTML = "How are you?";
+      }
+   </script>
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 20rem;
+            height: 20rem;
+            margin: 5px 5px 0px 5px;
+            background-color: yellowgreen;
+        }
+        h1{
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="myClass">
+        <h1>Hello World</h1>
+    </div>
+
+    <script>
+        let mydiv = document.querySelector('div');
+
+        mydiv.addEventListener('click',function(e){
+            console.log(e);
+            console.log(e.type);
+            console.log(e.target);
+            console.log(e.target.id);
+            console.log(e.target.className);
+            console.log(e.target.innerHTML);
+            console.log(e.target.textContent);
+            console.log(e.target.innerText);
+        });
+    </script>
+</body>
+</html>

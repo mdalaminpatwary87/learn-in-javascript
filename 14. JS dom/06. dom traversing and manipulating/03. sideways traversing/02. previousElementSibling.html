@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS-DOM</title>
+</head>
+<body>
+    <ol class="student_list">
+        <li class="student-a">Student A</li>
+        <li class="student-b">Student B</li>
+        <li class="student-c">Student C</li>
+    </ol>
+    <script>
+        var studentC = document.querySelectorAll("li")[2];
+        var studentB = studentC.previousElementSibling;
+    </script>
+</body>
+</html>   

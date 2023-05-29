@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>BOM</h1>
+    <div class="location">
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <button type="button">Click</button>
+
+    <script>
+        let locationDiv = document.querySelector('.location');
+        let p1 = locationDiv.children[0];
+        p1.innerHTML = location.href;
+        
+        let p2 = locationDiv.children[1];
+        p2.innerHTML = location.protocol;
+
+        let p3 = locationDiv.children[2];
+        p3.innerHTML = location.hostname;
+
+        let p4 = locationDiv.children[3];
+        p4.innerHTML = location.port;
+
+        let p5 = locationDiv.children[4];
+        p5.innerHTML = location.pathname;
+
+        let button = document.querySelector('button');
+        button.addEventListener('click',function(){
+            location.assign('https://www.youtube.com/')
+        })
+    </script>
+</body>
+</html>

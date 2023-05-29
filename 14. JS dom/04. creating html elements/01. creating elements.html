@@ -1,0 +1,21 @@
+<!-- 
+    - document.createElement('tagName') 
+                                       - method to create a new element with a specified tag name. 
+                                       - we can then use various properties and methods to customize the element's attributes, content, and appearance, and add it to the document tree.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>JavaScript</title>
+</head>
+<body>
+   <script>
+       var heading = document.createElement('h1');   // Create a new h1 element
+       heading.id = "hedaingId";                     // Set the h1 ID attribute to "hedaingId"
+       heading.className = "headingClass";           // Set the h1 class attribute to "headingClass"
+       heading.innerHTML = "Hello World";            // Set the h1 innerHTML property to some text like "Hello World"
+       heading.style.backgroundColor ="yellowgreen"; // Set the h1 style property to change its appearance
+       document.body.appendChild(heading);           // Append the h1 to the document body
+   </script>
+</body>
+</html>

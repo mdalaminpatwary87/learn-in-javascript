@@ -1,0 +1,1 @@
+Mouse events – how to handle mouse events. you will learn how to work with JavaScript keyboard events including keydown, keypress, and keyup.

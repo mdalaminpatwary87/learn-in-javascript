@@ -1,0 +1,26 @@
+<!-- 
+    - An onclick event in JavaScript is an event that occurs when a user clicks on an HTML element, such as a button or a link.
+    - When the element is clicked, the function assigned to the onclick event is executed.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- onClick event using inline -->
+    <button type="button" onclick="alert('Hello World! 1');">Click! 1</button>
+
+    <!-- onclick event using invoked function -->
+    <button type="button" onclick="myFunction()">Click! 2</button> 
+
+    <script>
+        function myFunction(){
+            alert("Hello World! 2");
+        }
+    </script>
+</body>
+</html> 
+<!-- 
+    In this example, when the user clicks the "Click me" button, the myFunction() function is executed, which displays an alert box with the message "Hello World!".
+ -->

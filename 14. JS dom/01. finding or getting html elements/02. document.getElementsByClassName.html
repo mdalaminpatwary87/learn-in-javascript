@@ -1,0 +1,21 @@
+<!-- 
+    - document.getElementsByClassName('className') 
+                                                - method to find elements with a specific class name.
+                                                - method return HTMLCOLLECTION an array of elements with the class name like "myClass". If i access any particular elements must be write index number otherwise not works. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 class="myClass">Hello World 1</h1>
+    <h1 class="myClass">Hello World 2</h1>
+    
+    <script>
+        let myClass = document.getElementsByClassName('myClass');
+        myClass[0].style.color = "green";
+        myClass[1].style.color = "yellowgreen";
+    </script>
+</body>
+</html>

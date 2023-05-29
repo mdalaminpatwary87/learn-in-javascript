@@ -1,0 +1,19 @@
+<!-- 
+    - setAttribute() method to change the value of an attribute of an element.
+    - syntax: element.setAttribute('attribute', 'value');
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <img src="../image/programming.gif" alt="Computer man">
+
+    <script>
+        let changeImage = document.querySelector("img");
+        changeImage.setAttribute('src',"../image/smiley.gif");
+        changeImage.setAttribute('alt',"smiley emoji");
+    </script>
+</body>
+</html>

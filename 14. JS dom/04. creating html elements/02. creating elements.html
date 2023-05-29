@@ -1,0 +1,23 @@
+<!-- 
+    - we can use similar techniques to create other types of elements, such as p, a, img, input, and so on, and customize their attributes and appearance using different properties and methods.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Hello World</h1>
+    </main>
+
+    <script>
+        var aLink = document.createElement('a');
+        aLink.href = "https://www.youtube.com/";
+        aLink.innerHTML = "Click";
+
+        var main = document.querySelector('#main');
+        main.appendChild(aLink);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- 
+    - addEventListener() use to listen an event then execute a specified function of code.
+    - syntax: element.addEventListener(eventName, function)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button type="button">Click</button>
+
+    <script>
+        let mybutton = document.querySelector('button');
+
+        mybutton.addEventListener('click', function(){
+            alert('Button clicked!');
+        });
+    </script>
+</body>
+</html>

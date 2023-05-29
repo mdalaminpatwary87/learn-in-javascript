@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <input type="text" id="message">
+    <script>
+        var message = document.querySelector('#message');
+        message.addEventListener('keypress', function (e){
+            console.log(e.type);
+        })
+    </script>
+</body>
+</html>

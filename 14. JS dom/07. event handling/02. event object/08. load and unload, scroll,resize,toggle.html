@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="height: 200vh;">
+    <details>
+        <summary>Hridoy</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolorum reiciendis ipsam tempore assumenda repellat eum quia sint aperiam accusantium facere placeat sit numquam, dolore cumque deserunt dolor harum nihil quo adipisci quam temporibus, voluptas libero tempora? Dolorem itaque accusantium rem distinctio error tempore voluptas nihil obcaecati cumque, debitis consequatur nisi odio vero at doloremque quae odit quis. In eaque, necessitatibus laborum neque praesentium assumenda aut quae repellendus et architecto exercitationem reiciendis possimus dolorem. Voluptatem accusamus aspernatur eveniet porro sed vero vitae tenetur odit, ipsa sit, modi quaerat consequuntur sint ullam quo quia, maiores iure praesentium itaque tempore esse dignissimos!</p>
+    </details>
+
+    <script>
+        window.addEventListener('load', function(){
+            console.log("load")
+        })
+        
+        window.addEventListener('unload', function(){
+            console.log("unload")
+        })
+        
+        window.addEventListener('scroll', function (){
+            console.log("scroll");
+        })
+
+        window.addEventListener('resize', function (){
+            var width = window.outerWidth;
+            var height = window.outerHeight;
+            console.log(`height: ${height} width: ${width}`);
+        })
+        // toogle works on details
+        var details = document.querySelector('details');
+        details.addEventListener('toggle', function(){
+            console.log("toggle")
+        })
+    </script>
+</body>
+</html>

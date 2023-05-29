@@ -1,0 +1,10 @@
+Javascript comments  => In JavaScript, there are two ways to write comments: 
+                     -  Single-line comments  => Single-line comments start with // and continue until the end of the line.
+                     -  Multi-line comments   => Multi-line comments start with /* and end with */
+
+// This is a single-line comment
+
+/*
+    This is a 
+    multi-line comment
+*/

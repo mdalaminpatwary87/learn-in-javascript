@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JAVASCRIPT</title>
+    <style>
+        p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Show Content</h1>
+    <p id="demo">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="showContent()">Click</button>
+    <button type="button" onclick="hideContent()">Hide</button>
+
+    <script>
+        var element = document.getElementById('demo');
+        function showContent(){
+            element.style.display="block"
+        }
+
+        function hideContent(){
+            element.style.display="none"
+        }
+    </script>
+</body>
+</html>

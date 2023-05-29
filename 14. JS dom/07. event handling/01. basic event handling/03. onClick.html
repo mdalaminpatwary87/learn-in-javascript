@@ -1,0 +1,45 @@
+<!-- 
+    - another example using onClick event
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <style>
+        .image{
+            width: 300px;
+            padding-top:20px ;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="myDiv">
+        <button type="button" onclick="myFunction1()">Click 1</button>
+        <button type="button" onclick="myFunction2()">Click 2</button>
+        <br/>
+        <br/>
+        <img class="image">
+    </div>
+
+
+    <script>
+        let showBtnImg = document.querySelector('img');
+
+        function myFunction1(){
+            showBtnImg.src = "../images/html.png";
+            showBtnImg.alt = 'html image';
+        }
+
+        function myFunction2(){
+            showBtnImg.src = "../images/javascript.png";
+            showBtnImg.alt = 'javascript image';
+        }
+    </script>
+</body>
+</html>

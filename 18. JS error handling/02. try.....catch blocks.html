@@ -1,0 +1,20 @@
+<!-- 
+    - here an example with an error: shows (1) and (3)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        try{
+            alert("Start of try runs");
+            errorSomething; // error, variable is not defined!
+            alert('End of try (never reached)');
+        }catch(error){
+            alert(`Error has occurred!`);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- 
+    - throw statement allows you to create a custom error.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        try{
+            var myNumber = prompt("Enter number between 5 to 10:");
+            if(myNumber < 5){
+                throw "Your value is small. Please follow the instruction";
+            }else if(myNumber > 10){
+                throw "Your value is big. Please follow the instruction";
+            }else{
+                throw "Successfully Entered";
+            }
+        }catch(error){
+            alert(error);
+        }
+    </script>
+</body>
+</html>

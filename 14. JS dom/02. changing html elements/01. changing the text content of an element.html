@@ -1,0 +1,34 @@
+<!-- 
+    - There are three ways to change the text content of an element such as innerHTML,textContent,innerText.
+    
+    - innerHTML property to change the text content of an element.
+    - syntax: element.innerHTML =  'new html content';
+
+    - textContent property to change the text content of an element.
+    - syntax: element.textContent =  'new html content';
+
+    - innerText property to change the text content of an element.
+    - syntax: element.innerText =  'new html content';
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 id="myHeading1">Hello World</h1>
+    <h1 id="myHeading2">Hello World</h1>
+    <h1 id="myHeading3">Hello World</h1>
+
+    <script>
+        let myHeading1 = document.querySelector('#myHeading1');
+        myHeading1.innerHTML = "New text content 1";
+
+        let myHeading2 = document.querySelector('#myHeading2');
+        myHeading2.textContent = "New text content 2";
+
+        let myHeading3 = document.querySelector('#myHeading3');
+        myHeading3.innerText = "New text content 3";
+    </script>
+</body>
+</html>

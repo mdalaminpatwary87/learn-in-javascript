@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>play audio in javascript</title>
+    <style>
+        #myButton{
+            padding: 5px;
+            width: 100px;
+            background-color: yellowgreen;
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton">A</button>
+    <button id="myButton">B</button>
+    <button id="myButton">C</button>
+    <script>
+        var myButton = document.querySelectorAll("#myButton");
+        for(var i =0; i <myButton.length; i++){
+            myButton[i].addEventListener("click", function(){
+                var text = this.innerHTML;
+                audioPlay(text);
+            })
+        }
+        function audioPlay(text){
+            switch(text){
+                case 'A':
+                    var audio = new Audio("AUDIO/a.mp3");
+                    audio.play();
+                    break;
+                case 'B':
+                    var audio = new Audio("AUDIO/b.mp3");
+                    audio.play();
+                    break;
+                case 'C':
+                    var audio = new Audio("AUDIO/c.mp3");
+                    audio.play();
+                    break;
+            } 
+
+        }
+    </script>
+</body>
+</html>

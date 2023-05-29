@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Looping array elements with html</p>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var countLen = fruits.length;
+        
+        var ulList = "<ul type = 'circle'>";
+        for(var i = 0; i < countLen; i++){
+            ulList += "<li>" + fruits[i] + "</li>"
+        }
+        ulList += "/<ul>";
+        document.getElementById('demo').innerHTML = ulList; 
+    </script>
+</body>
+</html>

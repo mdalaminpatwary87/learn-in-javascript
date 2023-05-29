@@ -1,0 +1,26 @@
+<!-- 
+    - another example using onClick event.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>JavaScript</title>
+ </head>
+ <body>
+     <button type="button" onclick="myFunction1()">Click1</button>
+     <button type="button" onclick="myFunction2()">Click2</button>
+     <p></p>
+
+     <script>
+        let showBtnText =  document.querySelector('p');
+
+        function myFunction1(){
+            showBtnText.innerHTML = "You have clicked button 1";
+        };
+
+        function myFunction2(){
+            showBtnText.innerHTML = "You have clicked button 2";
+        };
+     </script>
+ </body>
+ </html>

@@ -1,0 +1,43 @@
+<!-- 
+    - Traversing downward in the DOM means moving from a parent element to its child elements.    - // Eikhan e r document likte hobe na. Amra parent theke tar child ke parent er madhome select korte parbo querySelector er madhome.
+    - The DOM represents the HTML structure as a tree-like hierarchy of elements, with each element having a parent element and zero or more child elements.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .student_list{
+            padding: 10px;
+            font-family: jost;
+            list-style-position: inside;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <ol class="student_list">
+        <li>Student A</li>
+        <li>Student B</li>
+        <li>Student C</li>
+    </ol>
+
+    <script>
+        let studentList = document.querySelector(".student_list");
+    
+        let studentA = studentList.querySelectorAll('li');  
+        studentA[0].style.color="red";
+        
+        let studentB = studentList.querySelectorAll("li");
+        studentB[1].style.color="green";
+
+        let studentC = studentList.querySelectorAll("li");
+        studentC[2].style.color="blue";
+    </script>
+</body>
+</html>  

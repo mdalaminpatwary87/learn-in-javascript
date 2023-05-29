@@ -1,0 +1,38 @@
+<!-- 
+    - classList property is a property of the DOM in JavaScript that is used to access the class attribute of an HTML element.
+    - classList property returns a collection of the class names of the element, which can be manipulated using various methods.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .myClass{
+            color: green;
+            background-color: yellowgreen;
+            padding: 10px;
+            text-align: center;
+        }
+        .toggle{
+            background-color: wheat;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="myHeading" class="myClass">Hello World</h1>
+  
+    <script>
+        let myHeading = document.querySelector("#myHeading");
+        myHeading.classList                    // check list of the class
+        myHeading.classList.remove('myClass')  // Remove a class from the element
+        myHeading.classList.add('myClass');    // Add a class to the element
+    </script>
+</body>
+</html>

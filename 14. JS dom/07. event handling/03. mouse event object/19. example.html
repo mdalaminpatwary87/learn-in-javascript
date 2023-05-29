@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button">btn1</button>
+    <button type="button">btn1</button>
+    <button type="button">btn1</button>
+
+    <script>
+        let button = document.querySelectorAll('button');
+        Array.from(button).map((btn) =>{
+            button.addEventListener('click', function(e){
+                console.log(e.target.innerHTML);
+            })
+        })
+    </script>
+</body>
+</html>

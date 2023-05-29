@@ -1,0 +1,23 @@
+<!-- 
+    - removeChild() method is a method of the DOM (Document Object Model) in JavaScript that is used to remove a specified child node of the specified element.
+    - syntax: parentNode.removeChild(childNode);
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <main id="main">
+        <h1 id="myHeading1">Hello World 1</h1>
+        <a href="https://www.w3schools.com/">w3school</a>
+        <h1 id="myHeading2">Hello World 2</h1>
+    </main>
+
+    <script>
+        let myHeading2  = document.querySelector("#myHeading2");
+        let mainContent = document.querySelector("#main");
+        mainContent.removeChild(myHeading2);
+    </script>
+</body>
+</html>

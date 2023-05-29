@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            width: 20rem;
+            height: 20rem;
+            margin: 5px 5px 0px 5px;
+            background-color: yellowgreen;
+        }
+        h1{
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+    </div>
+
+    <script>
+        var div = document.querySelector('div');
+        
+        div.addEventListener('mousemove',function(e){
+            console.log("clientX :" +e.clientX + " clientY: " + e.clientY);
+        });
+    </script>
+</body>
+</html>

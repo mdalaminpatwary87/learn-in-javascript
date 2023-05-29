@@ -1,0 +1,27 @@
+<!-- 
+    - onchange event is a part of the DOM and is triggered when the value of an input element, such as a text input, checkbox, or select box, is changed by the user.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="myClass">
+    </form>
+
+    <script>
+        var onchangeEvent = document.querySelector("input[type=text]");
+        onchangeEvent.addEventListener("change", function(e){
+            console.log(e);                   // ei event er moddhe ki ki royeche ta check kora hoy
+            console.log(e.type);              // check whick type of event
+            console.log(e.target);            // print target elements
+            console.log(e.target.className);  // access input class name   
+            console.log(e.target.id);         // access input id name
+            console.log(e.target.value);      // access input value
+        });
+    </script>
+</body>
+</html>

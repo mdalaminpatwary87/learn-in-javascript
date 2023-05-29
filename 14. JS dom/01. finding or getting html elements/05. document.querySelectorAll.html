@@ -1,0 +1,21 @@
+<!-- 
+    - document.querySelectorAll('cssSelector') 
+                                            - method find all elements that match a specific CSS selector.
+                                            - method return NodeLIST an array of all elements for specific CSS selector.If i access any particular elements must be write index number otherwise not works.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1 class="myClass">Hello World 1</h1>
+    <h1 class="myClass">Hello World 2</h1>
+
+    <script>
+        let myClass = document.querySelectorAll('.myClass');
+        myClass[0].style.color = 'green';
+        myClass[1].style.color = 'yellowgreen';
+    </script>
+</body>
+</html>
